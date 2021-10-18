@@ -1,0 +1,71 @@
+#gameScreen {
+  position: relative;
+  background-image: url("../images/background/BG.png");
+  background-size: 100%;
+  height: 360px;
+  width: 640px;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+#cnv {
+  width: 100%;
+}
+
+#controller {
+  width: 100%;
+  padding: 10px;
+}
+
+#restart {
+  border: 0;
+  height: 55px;
+  position: absolute;
+  width: 150px;
+  left: 43%;
+  top: 47%;
+  display: none;
+  cursor: pointer;
+  background-color: #04aa6d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+
+  border-radius: 8px;
+}
+
+.wrapper {
+  text-align: center;
+  margin:auto;
+  margin-bottom: 0;
+}
+
+#credit {
+  text-align: center;
+  margin: auto;
+
+}
+
+@media only screen and (max-width: 710px) {
+  #cnv {
+    width: 50%;
+  }
+  #gameScreen {
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  #restart {
+    float: left;
+    max-width: 20%;
+    max-height: 20%;
+    font-size: 12px;
+  }
+  .wrapper {
+    float: left;
+    margin-left: 80px;
+  }
+
+}
